@@ -11,18 +11,19 @@
 }
 
 .header {
-    position: fixed;
+
     top: 0;
     width: 100%;
     padding: 10px;
     z-index: 1000;
     text-align: left;
+    font-weight: 500;
+    font-size: 1.5rem;
 
 }
 
 .body {
-    margin-top: 60px;
-    /* Adjust based on header height */
+
     flex: 1;
 }
 
@@ -33,6 +34,7 @@
     gap: 10px;   
     color: #aaaaaa;
     font-size: 0.6rem;
+    margin-top: 40px;
 }
 
 @layer components {
@@ -41,12 +43,55 @@
     }
     .card {
         @apply w-full bg-gray-800 m-1 p-4 rounded-lg ;
+        
+    }
+    .buttonRow {
+        @apply flex justify-between items-center mt-2 align-middle;
+    }
+    .actionButtonContainer {
+        @apply flex justify-between items-center;
+    }
+    .actionButton {
+        @apply whitespace-nowrap flex justify-center align-middle cursor-pointer
+        bg-gray-200 hover:bg-gray-50 text-gray-900 font-medium p-2 rounded-md
+        border border-gray-700 focus:outline-none  me-2 mb-2 text-xs;
+       
+        /* width: 125px; 
+        height: 34px; 
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: .81rem; */
+    }
+    .clearButton {
+        @apply cursor-pointer focus:outline-none text-white bg-gray-700 hover:bg-red-800 font-medium rounded-lg py-2 px-4 me-2 mb-2 text-xs;
     }
 }
 
 .output {
     background-color: #4a5568;
-    /* Darker background for output */
     padding: 10px;
     border-radius: 0.375rem;
+}
+
+h1 {
+    @apply mb-2;
+    font-family: "Sora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+
+        font-family: "M PLUS 1p", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+
+
+}
+
+.slider {
+    width: 100px;
 }

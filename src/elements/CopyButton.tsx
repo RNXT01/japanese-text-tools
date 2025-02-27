@@ -19,7 +19,7 @@ const CopyButton = ({ text, className }: CopyButtonProps) => {
     };
 
     return (
-        <button onClick={handleCopy} className={`text-gray-900 dark:text-gray-400 hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-700 rounded-md py-2 px-2 inline-flex items-center justify-center bg-white border-gray-200 border h-7 top-10 pt-1 ${className}`}>
+        <button onClick={handleCopy} disabled={!text} className={`disabled:opacity-50 text-gray-900 dark:text-gray-400 hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-700 rounded-md py-2 px-2 inline-flex items-center justify-center bg-white border-gray-200 border h-7 top-10 pt-1 cursor-pointer disabled:cursor-not-allowed ${className}`}>
             <span id="default-message" className={`${copied && "hidden"}`}>
                 <span className="inline-flex items-center {!copied && `hidden`}">
                     <svg className="w-3 h-3 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">

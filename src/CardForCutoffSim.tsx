@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import CopyButton from "./CopyButton";
+import CopyButton from "./elements/CopyButton";
+import ClearButton from "./elements/ClearButton";
 
 const CardForCutoffSim: React.FC = () => {
     const [inputValue, setInputValue] = useState('');
@@ -27,27 +28,30 @@ const CardForCutoffSim: React.FC = () => {
     return (
         <>
             <div className="card">
-                <h2>Text cutoff simulator</h2>
+                <h1>Text cutoff simulator</h1>
                 <input
                     type="text"
                     value={inputValue}
                     onChange={(e) => handleInputChange(e.target.value)}
                     placeholder="Enter text..."
-                    className="border border-gray-400 rounded-md p-2 mb-4 w-full"
+                    className="border border-gray-400 rounded-md p-2 w-full"
                     maxLength={MAX_INPUT_LENGTH}
                 />
                 {inputValue.length >= MAX_INPUT_LENGTH && <p className="text-red-600 text-sm p-2">Maximum input length: {MAX_INPUT_LENGTH}</p>}
-                
-                <input 
-                    type="range" 
-                    value={cutoffLength}
-                    min="1"
-                    max="50"
-                    onChange={(e) => handleCutoffLength(parseInt(e.target.value))}
-                />
-                <label>{cutoffLength}</label>
-
-                <button onClick={handleClear} type="button" className="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-md text-sm px-5 py-2.5 mb-2">Clear</button>
+                <div className="buttonRow">
+                    <div className="actionButtonContainer">
+                        <input
+                            type="range"
+                            value={cutoffLength}
+                            min="1"
+                            max="50"
+                            onChange={(e) => handleCutoffLength(parseInt(e.target.value))}
+                            className='slider'
+                        />
+                        <label className='ml-2 text-sm'>{cutoffLength}</label>
+                    </div>
+                    <ClearButton onClick={handleClear} className="ml-2" />
+                </div>
                 <div className="flex justify-between mt-4 w-full">
                     <div className="output text-gray-200 mt-4 w-full" style={{ fontSize: `${Math.max(12, 20 - Math.max(outputValue.length - 50, 0) * .1)}px` }}>
                         <div className="flex justify-between items-center">

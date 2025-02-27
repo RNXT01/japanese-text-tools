@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import CopyButton from "./CopyButton";
+import CopyButton from "./elements/CopyButton";
+import ClearButton from "./elements/ClearButton";
 
 const CardForInitials: React.FC = () => {
     const [inputValue, setInputValue] = useState('');
@@ -97,31 +98,36 @@ const CardForInitials: React.FC = () => {
 
     return (
         <div className="card ">
-            <h2>Initials</h2>
+            <h1>Initials</h1>
             <input
                 type="text"
                 value={inputValue}
                 onChange={(e) => handleInputChange(e.target.value)}
                 placeholder="Enter alphabetical initials..."
-                className="border border-gray-400 rounded-md p-2 mb-4 w-full"
+                className="border border-gray-400 rounded-md p-2  w-full"
                 maxLength={MAX_INPUT_LENGTH}
             />
-            
-            <span className={`${isToggled ? "text-gray-500 dark:text-gray-500" : "text-gray-100 dark:text-gray-100"} text-sm `}>Katakana</span>
-            <div className="controlsRow flex flex-nowrap justify-between items-center">
-                <label className="inline-flex items-center me-5 cursor-pointer">
-                    <input
-                        type="checkbox"
-                        value=""
-                        className="sr-only peer"
-                        onClick={toggle}
-                        defaultChecked={false}
-                    ></input>
-                    <div className="relative w-11 h-6 bg-slate-400 rounded-full peer dark:bg-gray-700  peer-focus:ring-slate-200 dark:peer-focus:ring-slate-600 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-slate-600 dark:peer-checked:bg-slate-600"></div>
-                </label>
-                {inputValue.length >= MAX_INPUT_LENGTH && <p className="text-red-600 text-sm p-2">Maximum input length: {MAX_INPUT_LENGTH}</p>}
-                <span className={`${isToggled ? "text-gray-100 dark:text-gray-100" : "text-gray-500 dark:text-gray-500"} text-sm `}>Hiragana</span>
-                <button onClick={handleClear} type="button" className="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-md text-sm px-5 py-2.5 mb-2">Clear</button>
+            <div className="buttonRow">
+                <div className="actionButtonContainer">
+                    <span className={`${isToggled ? "text-gray-500 dark:text-gray-500" : "text-gray-100 dark:text-gray-100"} text-sm `}>Katakana</span><span className={`ml-1 ${isToggled ? "text-gray-500" : "text-teal-600"}`}>ア</span>
+
+                    <label className="inline-flex items-center mx-3 cursor-pointer">
+                        <input
+                            type="checkbox"
+                            value=""
+                            className="sr-only peer"
+                            onClick={toggle}
+                            defaultChecked={false}
+                        ></input>
+                        <div className="relative w-11 h-6 bg-slate-600 rounded-full peer peer-focus:ring-slate-600 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-100 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-slate-600 "></div>
+                    </label>
+                    {inputValue.length >= MAX_INPUT_LENGTH && <p className="text-red-600 text-sm p-2">Maximum input length: {MAX_INPUT_LENGTH}</p>}
+                    <span className={`mr-1 ${isToggled ? "text-teal-600" : "text-gray-500"}`}>あ</span>
+                    <span className={`${isToggled ? "text-gray-100 dark:text-gray-100" : "text-gray-500"} text-sm `}>Hiragana</span>
+
+
+                </div>
+                <ClearButton onClick={handleClear} className="ml-2" />
             </div>
             <div className="flex justify-between mt-4 w-full">
                 <div className="output text-gray-200 mt-4 w-full" style={{ fontSize: `${Math.max(12, 20 - Math.max(outputValue.length - 50, 0) * .1)}px` }}>
