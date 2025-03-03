@@ -1,0 +1,2 @@
+- Update action buttons so that only the "character" icon remains on small screens (letting the button shrink)
+- Add tooltips
