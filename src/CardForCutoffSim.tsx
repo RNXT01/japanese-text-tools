@@ -46,7 +46,7 @@ const CardForCutoffSim: React.FC = () => {
                             min="1"
                             max="50"
                             onChange={(e) => handleCutoffLength(parseInt(e.target.value))}
-                            className='slider'
+                            className='slider '
                         />
                         <label className='ml-2 text-sm'>{cutoffLength}</label>
                     </div>

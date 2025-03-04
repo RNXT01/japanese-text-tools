@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import CopyButton from "./elements/CopyButton";
 import ClearButton from "./elements/ClearButton";
 
-
-
 const CardForHalfFullWidthConv: React.FC = () => {
     const [inputValue, setInputValue] = useState('');
     const [outputValue, setOutputValue] = useState('');
