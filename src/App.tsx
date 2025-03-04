@@ -1,6 +1,6 @@
 import './styles.css'
 import Header from './Header';
-
+import { Analytics } from "@vercel/analytics/react"
 import Footer from './Footer';
 import CardForInitials from './CardForInitials';
 import CardForHalfFullWidthConv from './CardForHalfFullWidthConv';
@@ -34,6 +34,7 @@ function App() {
         </div>
       </div>
       <Footer />
+      <Analytics />
     </div>
   )
 }
