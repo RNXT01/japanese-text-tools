@@ -35,7 +35,7 @@ const CardFor3WayConversion: React.FC = () => {
                     id="message"
                     value={inputValue}
                     onChange={handleInputChange}
-                    className="block p-2.5 w-full text-sm rounded-md border bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
+                    className="block p-2.5 w-full text-sm rounded-md border bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:border-2 focus:border-teal-800"
                     placeholder="Enter romaji / katakana / hiragana">
                 </textarea>
                 <div className="buttonRow">

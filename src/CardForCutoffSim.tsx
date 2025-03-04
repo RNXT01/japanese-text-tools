@@ -34,7 +34,7 @@ const CardForCutoffSim: React.FC = () => {
                     value={inputValue}
                     onChange={(e) => handleInputChange(e.target.value)}
                     placeholder="Enter text..."
-                    className="border border-gray-400 rounded-md p-2 w-full"
+                    className="block p-2.5 w-full text-sm rounded-md border bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:border-2 focus:border-teal-800"
                     maxLength={MAX_INPUT_LENGTH}
                 />
                 {inputValue.length >= MAX_INPUT_LENGTH && <p className="text-red-600 text-sm p-2">Maximum input length: {MAX_INPUT_LENGTH}</p>}

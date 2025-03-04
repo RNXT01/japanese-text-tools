@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  padding: 10px;
+  padding: 11px;
   /* background-color: #181818; */
   background-image: linear-gradient(to bottom, #181818, #0f0f0f);
   color: #f0f0f0;
@@ -40,7 +40,7 @@
     max-width: 45%;
   }
   .card {
-    @apply w-full bg-gray-800 m-1 p-4 rounded-lg;
+    @apply w-full bg-gray-800 m-3 p-4 rounded-lg ;
   }
   .buttonRow {
     @apply flex justify-between items-center mt-2 align-middle;
@@ -81,9 +81,36 @@ html {
 }
 
 .slider {
-  width: 100px;
+  -webkit-appearance: none; /* Remove default appearance */
+  width: 100px; /* Full width */
+  height: 8px; /* Track height */
+  background: linear-gradient(to right, #ddd, #eee); /* Gradient color */
+  border-radius: 5px; /* Rounded track */
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove default thumb appearance */
+  appearance: none;
+  width: 20px; /* Thumb width */
+  height: 20px; /* Thumb height */
+  background: teal; /* Thumb color */
+  border-radius: 50%; /* Rounded thumb */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 20px; /* Thumb width */
+  height: 20px; /* Thumb height */
+  background: #teal; /* Thumb color */
+  border-radius: 50%; /* Rounded thumb */
+  cursor: pointer; /* Pointer cursor on hover */
 }
 
 .outputContent {
   overflow-wrap: anywhere;
 }
+textarea:focus, input:focus {
+  outline: none;
+  box-shadow: none; 
+}
+
