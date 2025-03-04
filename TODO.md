@@ -1,2 +1,4 @@
 - Update action buttons so that only the "character" icon remains on small screens (letting the button shrink)
 - Add tooltips
+- Add dark mode / light mode toggle
+- Add the ability to hide / collapse some panels

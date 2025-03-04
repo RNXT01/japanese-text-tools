@@ -4,16 +4,16 @@ const Footer: React.FC = () => {
     return (
         <div className="footer">
             <a href="">
-            <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 1200 1227"
-    width="14"
-    height="14"
-    fill="currentColor"
-  >
-    <path d="M905 0H1137L696 527L1200 1227H837L518 758L148 1227H-85L474 644L0 0H370L656 439 905 0ZM844 1101H949L327 105H217L844 1101Z"/>
-  </svg>
-                
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1200 1227"
+                    width="14"
+                    height="14"
+                    fill="currentColor"
+                >
+                    <path d="M905 0H1137L696 527L1200 1227H837L518 758L148 1227H-85L474 644L0 0H370L656 439 905 0ZM844 1101H949L327 105H217L844 1101Z" />
+                </svg>
+
             </a>
             <a href="">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14">
