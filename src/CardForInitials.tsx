@@ -132,7 +132,7 @@ const CardForInitials: React.FC = () => {
             <div className="flex justify-between mt-4 w-full">
                 <div className="output text-gray-200 mt-4 w-full" style={{ fontSize: `${Math.max(12, 20 - Math.max(outputValue.length - 50, 0) * .1)}px` }}>
                     <div className="flex justify-between items-center">
-                        <span>{outputValue}</span>
+                        <span className="outputContent">{outputValue}</span>
                         <CopyButton text={outputValue} className="ml-2" />
                     </div>
                 </div>
