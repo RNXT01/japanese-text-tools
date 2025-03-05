@@ -20,7 +20,7 @@ const CardForCommonChars: React.FC = () => {
     return (
         <>
             <div className="card">
-                <h1>Common characters</h1>
+                <h2>Common characters</h2>
                 <label className="inline-flex items-center mb-5 cursor-pointer">
                     <input type="checkbox" value="" className="sr-only peer" onClick={() => setToggle(!toggle)} />
                     <div className="relative w-9 h-5 bg-gray-400 

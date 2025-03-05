@@ -70,7 +70,7 @@ const CardForHalfFullWidthConv: React.FC = () => {
     return (
         <>
             <div className="card">
-                <h1>Half-width / Full-width Converter</h1>
+                <h2>Half-width / Full-width Converter</h2>
                 <textarea
                     id="message"
                     value={inputValue}

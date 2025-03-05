@@ -98,7 +98,7 @@ const CardForInitials: React.FC = () => {
 
     return (
         <div className="card ">
-            <h1>Initials</h1>
+            <h2>Initials</h2>
             <input
                 type="text"
                 value={inputValue}

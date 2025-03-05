@@ -28,7 +28,7 @@ const CardForCutoffSim: React.FC = () => {
     return (
         <>
             <div className="card">
-                <h1>Text cutoff simulator</h1>
+                <h2>Text cutoff simulator</h2>
                 <input
                     type="text"
                     value={inputValue}

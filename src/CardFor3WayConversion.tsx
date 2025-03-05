@@ -30,7 +30,7 @@ const CardFor3WayConversion: React.FC = () => {
     return (
         <>
             <div className="card">
-                <h1>Kana conversion</h1>
+                <h2>Kana conversion</h2>
                 <textarea
                     id="message"
                     value={inputValue}
