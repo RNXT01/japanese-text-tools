@@ -8,30 +8,35 @@ import CardForHalfFullWidthConv from './CardForHalfFullWidthConv';
 import CardForCommonChars from './CardForCommonChars';
 import CardForCutoffSim from './CardForCutoffSim';
 import CardFor3WayConversion from './CardFor3WayConversion';
+import EmptyCard from './EmptyCard';
 function App() {
 
   return (
     <div className="app">
       <Header />
       <div className="body">
-
-        <div className="flex flex-wrap">
-          <div className="cardContainer">
-            <CardFor3WayConversion />
-          </div>
-          <div className="cardContainer">
-            <CardForInitials />
-          </div>
-          <div className="cardContainer">
-            <CardForHalfFullWidthConv />
-          </div>
-          <div className="cardContainer">
-            <CardForCutoffSim />
-          </div>
-          <div className="cardContainer">
-            <CardForCommonChars />
-          </div>
+        <div className="container">
+          <div className="flex flex-wrap">
+            <div className="cardContainer">
+              <CardFor3WayConversion />
+            </div>
+            <div className="cardContainer">
+              <CardForInitials />
+            </div>
+            <div className="cardContainer">
+              <CardForHalfFullWidthConv />
+            </div>
+            <div className="cardContainer">
+              <CardForCutoffSim />
+            </div>
+            <div className="cardContainer">
+              <CardForCommonChars />
+            </div>
+            <div className="cardContainer">
+              <EmptyCard />
+            </div>
     
+          </div>
         </div>
       </div>
       <Footer />
