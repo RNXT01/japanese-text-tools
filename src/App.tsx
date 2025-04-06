@@ -8,7 +8,8 @@ import CardForHalfFullWidthConv from './CardForHalfFullWidthConv';
 import CardForCommonChars from './CardForCommonChars';
 import CardForCutoffSim from './CardForCutoffSim';
 import CardFor3WayConversion from './CardFor3WayConversion';
-import EmptyCard from './EmptyCard';
+import CardForNumbers from './CardForNumbers';
+
 function App() {
 
   return (
@@ -30,11 +31,15 @@ function App() {
               <CardForCutoffSim />
             </div>
             <div className="cardContainer">
-              <CardForCommonChars />
+              <CardForNumbers />
             </div>
             <div className="cardContainer">
-              <EmptyCard />
+              <CardForCommonChars />
             </div>
+            
+            {/* <div className="cardContainer">
+              <EmptyCard />
+            </div> */}
     
           </div>
         </div>
