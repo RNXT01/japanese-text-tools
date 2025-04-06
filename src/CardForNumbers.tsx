@@ -11,14 +11,14 @@ const CardForInitials: React.FC = () => {
     function handleInputChange(inputValue: string) {
         setInputValue(inputValue);
         let outValue = ""
-        if (isValidNumber(inputValue)) {
+        if (isValidNumber(inputValue.replace(/,/g, ""))) {
             if (inputValue.includes("万") || inputValue.includes("億") || inputValue.includes("兆") || inputValue.includes("京")) {
-                const parsed = parseJapaneseNumber(inputValue);
+                const parsed = parseJapaneseNumber(inputValue.replace(/,/g, ""));
                 if (!isNaN(parsed)) {
                     outValue = parsed.toLocaleString();
                 }
             } else {
-                outValue = formatJapaneseNumber(Number(inputValue));
+                outValue = formatJapaneseNumber(Number(inputValue.replace(/,/g, "")));
             }
         }
         setOutputValue(outValue);
