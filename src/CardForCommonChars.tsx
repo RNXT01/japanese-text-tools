@@ -15,7 +15,7 @@ const CardForCommonChars: React.FC = () => {
         }
     };
 
-    const commonChars = "※ 「 」 【 】 《 》 ・ → ← ↑ ↓ ★ ☆ ▲ ▼ ▶ ◀ ♪";
+    const commonChars = "※ 「 」 【 】 《 》 ・ 〒 → ← ↑ ↓ ★ ☆ ▲ ▼ ▶ ◀ ♪";
 
     return (
         <>
