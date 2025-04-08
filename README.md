@@ -27,7 +27,6 @@ Just visit [japanesetexttools.com](https://japanesetexttools.com) and use the to
 - ✅ No ads
 - ✅ No server-side processing — all data stays on your device
 
-Built with ❤️ for fellow Japanese learners and expats.
 
 ## Contributing
 
@@ -36,3 +35,5 @@ Any contribution - idea or code - is welcome! Please open an issue or submit a p
 ## Preview
 
 ![screenshot of the app](https://japanesetexttools.com/2025-04-08-screenshot.png)
+
+Built with ❤️ for fellow Japanese learners and expats.
