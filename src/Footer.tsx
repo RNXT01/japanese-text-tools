@@ -3,7 +3,7 @@ import React from 'react';
 const Footer: React.FC = () => {
     return (
         <div className="footer">
-            <a href="https://x.com/RNXT01">
+            <a href="https://x.com/s3ndev">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 1200 1227"
