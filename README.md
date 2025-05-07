@@ -18,7 +18,6 @@ I built this in early 2025 after constantly struggling with Japanese forms and c
 - Convert Japanese ↔ Arabic numerals
 - Browse commonly used non-textual characters (e.g. 〒 ★ ♪)
 
-
 ## How to Use
 
 Just visit [japanesetexttools.com](https://japanesetexttools.com) and use the tools right in your browser.
@@ -27,10 +26,9 @@ Just visit [japanesetexttools.com](https://japanesetexttools.com) and use the to
 - ✅ No ads
 - ✅ No server-side processing — all data stays on your device
 
-
 ## Contributing
 
-Any contribution - idea or code - is welcome! Please open an issue or submit a pull request, or reach out to me on [X](https://x.com/RNXT01).
+Any contribution - idea or code - is welcome! Please open an issue or submit a pull request, or reach out to me on [X](https://x.com/s3ndev).
 
 ## Preview
 
